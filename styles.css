@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  /* min-height: 100vh; */
+  background-color: rgb(35, 35, 67);
+}
+
+main {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  background-color: rgb(51, 51, 103);
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 520px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: #eee;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.movie-info h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.movie-info span {
+  background-color: rgb(35, 35, 67);
+  padding: 0.27rem;
+}
+
+header nav {
+  background-color: rgb(51, 51, 103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+header nav h3 {
+  position: absolute;
+  color: #eee;
+  left: 2rem;
+}
+nav ul li {
+  display: inline;
+  margin-left: 2rem;
+  list-style-type: none;
+  border: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.movie-info span.green {
+  color: rgb(46, 177, 46);
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: rgb(190, 61, 61);
+}
+
+#form #search {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  border-style: none;
+  outline: none;
+  background-color: rgb(35, 35, 67);
+  padding: 0.7rem;
+  font-family: inherit;
+  border-radius: 10px;
+
+  color: #eee;
+}
+
+/* .movie:hover .overview {
+  display: inline-block;
+  transform: translateY(0);
+} */
+
+.movie-clicked {
+  /* position: absolute;
+  left: 10px; */
+  font-family: inherit;
+  margin-top: 0.4rem;
+  height: 30rem;
+  width: 25rem;
+}
+
+.bigImg {
+  height: 90%;
+  width: 100%;
+}
+
+.movie-clicked .movie-info {
+  background-color: rgb(51, 51, 103);
+}
+
+.movie-clicked .overview {
+  /* display: none; */
+  background-color: #fff;
+  margin-top: 5px;
+  max-height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  /* left: 0;
+  right: 0;
+  bottom: 0; */
+  /* transform: translateY(105%);
+  transition: transform 0.4s ease-in; */
+}
+
+.overview h4 {
+  margin-top: 0;
+}
+
+.vote {
+  background-color: rgb(51, 51, 103);
+  color: #fff;
+  height: 100px;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.vote h3 {
+  text-align: center;
+}
+.vote h4 {
+  margin-top: 2px;
+  display: inline-block;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+
+.vote button {
+  position: absolute;
+  background-color: transparent;
+  margin-left: 1.5rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-style: none;
+  color: #eee;
+}
+
+.vote #like {
+  right: 60px;
+}
+.vote #dislike {
+  right: 5px;
+}
